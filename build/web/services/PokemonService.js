@@ -33,7 +33,7 @@ factory('PokemonService',['$http','$q', function($http, $q){
 
         $http({
             method : "get",
-            url : "https://pokeapi.co/api/v2/pokemon/" + idOrName
+            url : "http://pokeapi.co/api/v2/pokemon/" + idOrName
         }).
         then(function(result){
             deferred.resolve(result.data);
